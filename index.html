@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>My Projects</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 10px 0;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+        .col-sm-4 {
+            text-align: center;
+            padding: 10px;
+            flex: 1 1 20%; /* Adjust flex basis for 5 columns */
+            max-width: 20%; /* Ensure equal width for 5 columns */
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 120px; /* Smaller images to fit all projects */
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            width: 100%;
+            max-width: 120px; /* Smaller buttons to fit */
+            margin: 5px;
+            font-size: 14px; /* Smaller font size */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Bootstrap primary color */
+            border-color: #007bff;
+        }
+        .btn-secondary {
+            background-color: #28a745; /* Green color for Source Code button */
+            border-color: #28a745;
+        }
+        .btn-secondary:hover {
+            background-color: #218838; /* Darker green on hover */
+            border-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First Row: All Five Projects -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            
+            <title>My Projects</title>
+            <style>
+                body, html {
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                    font-family: Arial, sans-serif;
+                    background-color: #f8f9fa;
+                    overflow: hidden; /* Disable scrolling */
+                }
+                .container {
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+                .row {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 10px 0;
+                    flex-wrap: nowrap; /* Prevent wrapping */
+                }
+                .project-col {
+                    text-align: center;
+                    padding: 15px;
+                    width: 33.33%; /* Equal width for 3 columns */
+                    box-sizing: border-box;
+                }
+                .image-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                    height: 100%;
+                }
+                img {
+                    width: 160px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                    margin-bottom: 12px;
+                }
+                .btn-group {
+                    display: flex;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 100%;
+                }
+                .btn {
+                    flex: 1;
+                    max-width: 100px;
+                    font-size: 13px;
+                    padding: 6px 10px;
+                }
+                .btn-primary {
+                    background-color: #007bff;
+                    border-color: #007bff;
+                }
+                .btn-secondary {
+                    background-color: #28a745;
+                    border-color: #28a745;
+                }
+                h1 {
+                    margin-bottom: 20px;
+                    color: #343a40;
+                    text-align: center;
+                    font-size: 24px;
+                }
+                h4 {
+                    margin-bottom: 12px;
+                    color: #495057;
+                    font-size: 16px;
+                }
+                
+                /* Make sure everything fits without scrolling */
+                @media (max-width: 992px) {
+                    img { width: 140px; height: 90px; }
+                    .btn { max-width: 90px; font-size: 12px; }
+                }
+                @media (max-width: 768px) {
+                    img { width: 120px; height: 80px; }
+                    .btn { max-width: 80px; padding: 5px 8px; }
+                    h1 { font-size: 20px; margin-bottom: 15px; }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>My Projects</h1>
+                
+                <!-- First Row: 3 Projects -->
+                <div class="row">
+                    <!-- Project 1: E-commerce -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/premium-photo/shopping-cart-shopping-bags-product-box-put-laptop-which-is-online-shop-store-internet-digital-market-concept-marketing-digital-marketing-communication-3d-rendering_42098-145.jpg" alt="E-commerce">
+                            <h4>E-commerce</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/js/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/karri-durgaprasad/js" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 2: Form -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?ga=GA1.1.1928835504.1739533425&semt=ais_hybrid" alt="Form">
+                            <h4>Redux</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/Reduxone/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/karri-durgaprasad/Reduxone" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 3: Cart Shopping -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/sale-full-shopping-cart-red-pictogram_1284-8505.jpg" alt="Cart Shopping">
+                            <h4>Shopping Cart</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/cart-react/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/karri-durgaprasad/cart-react" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Row: 3 Projects -->
+                <div class="row">
+                    <!-- Project 4: Quiz -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/modern-stylish-problem-solving-faq-symbol-background-design_1017-58258.jpg" alt="Quiz">
+                            <h4>Quiz App</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/quiz-react/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/yourusername/quiz-repo" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 5: Online Shopping -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/online-shopping-concept_52683-63898.jpg" alt="Online Shopping">
+                            <h4>Online Store</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/shoppingcart-react/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/karri-durgaprasad/shoppingcart-react" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 6: Financial Tracker -->
+                    <div class="project-col">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/financial-data-concept-illustration_114360-9088.jpg" alt="Financial Tracker">
+                            <h4>Financial Tracker</h4>
+                            <div class="btn-group">
+                                <a href="https://karri-durgaprasad.github.io/react-tracker/" target="_blank" class="btn btn-primary">Preview</a>
+                                <a href="https://github.com/karri-durgaprasad/react-tracker" target="_blank" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
